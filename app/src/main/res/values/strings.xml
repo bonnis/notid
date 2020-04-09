@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Notid</string>
+    <string name="email_placeholder">Enter your email</string>
+    <string name="password_placeholder">Enter password</string>
+    <string name="nav_open">Navigation drawer open</string>
+    <string name="nav_close">Navigation drawer close</string>
+
+</resources>
