@@ -17,12 +17,13 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?attr/colorPrimary"
+            android:background="@color/colorPrimary"
             android:elevation="4dp"
             android:minHeight="?attr/actionBarSize"
             android:textAlignment="center"
+            app:title=" "
             android:theme="?attr/actionBarTheme"
-            app:navigationIcon="@menu/nav_menu"
+            app:navigationIcon="@drawable/ic_menu_black_24dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -37,10 +38,14 @@
 
         </androidx.appcompat.widget.Toolbar>
 
-        <FrameLayout
+        <fragment
+            android:name="androidx.navigation.fragment.NavHostFragment"
             android:id="@+id/fragment_container"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            app:navGraph="@navigation/nav_graph"
+            app:defaultNavHost="true"
+            />
 
     </LinearLayout>
 

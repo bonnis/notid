@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:id="@+id/lastNameText"
+        android:layout_width="320dp"
+        android:layout_height="41dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp"
+        android:background="@drawable/et_bg"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Last name"
+        app:layout_constraintEnd_toEndOf="@+id/firstNameText"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameText" />
+
+    <EditText
+        android:id="@+id/passwordTxt"
+        android:layout_width="320dp"
+        android:layout_height="41dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp"
+        android:background="@drawable/et_bg"
+        android:layout_marginTop="132dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password"
+        app:layout_constraintEnd_toEndOf="@+id/firstNameText"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameText" />
+
+    <EditText
+        android:id="@+id/confPasswordTxt"
+        android:layout_width="320dp"
+        android:layout_height="41dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp"
+        android:background="@drawable/et_bg"
+        android:layout_marginTop="192dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Confirm password"
+        app:layout_constraintEnd_toEndOf="@+id/firstNameText"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameText" />
+
+    <EditText
+        android:id="@+id/firstNameText"
+        android:layout_width="320dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/et_bg"
+        android:ems="10"
+        android:hint="First name"
+        android:inputType="textPersonName"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/emailTxt"
+        android:layout_width="320dp"
+        android:layout_height="41dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp"
+        android:background="@drawable/et_bg"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email address"
+        app:layout_constraintEnd_toEndOf="@+id/firstNameText"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameText" />
+
+    <Button
+        android:id="@+id/register_submitBtn"
+        android:layout_width="100dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="156dp"
+        android:background="@drawable/btn_bg"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confPasswordTxt" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="28dp"
+        android:text="Register"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/firstNameText"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -21,14 +21,14 @@
         android:id="@+id/email"
         android:layout_width="320dp"
         android:layout_height="41dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp"
+        android:background="@drawable/et_bg"
         android:layout_marginTop="72dp"
         android:layout_marginEnd="44dp"
-        android:background="@drawable/et_bg"
         android:ems="10"
         android:hint="@string/email_placeholder"
         android:inputType="textEmailAddress"
-        android:paddingStart="15dp"
-        android:paddingEnd="10dp"
         android:textSize="13sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
@@ -163,7 +163,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/regBtn"
         android:layout_width="107dp"
         android:layout_height="34dp"
         android:layout_marginTop="148dp"
