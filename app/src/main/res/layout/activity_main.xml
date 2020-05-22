@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".MainActivity">
+    android:clipChildren="true"
+    tools:context=".activity.MainActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -56,6 +57,7 @@
         android:layout_marginEnd="112dp"
         android:background="@drawable/btn_bg"
         android:text="Enter"
+        android:stateListAnimator="@null"
         app:layout_constraintEnd_toEndOf="@+id/pass"
         app:layout_constraintTop_toBottomOf="@+id/pass" />
 
@@ -130,6 +132,17 @@
         app:layout_constraintEnd_toEndOf="@+id/loginRightLine"
         app:layout_constraintTop_toBottomOf="@+id/loginOrText" />
 
+    <Button
+        android:id="@+id/regBtn"
+        android:layout_width="107dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="152dp"
+        android:background="@drawable/btn_bg"
+        android:stateListAnimator="@null"
+        android:text="Register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_btn" />
 
     <LinearLayout
         android:layout_width="227dp"
@@ -162,16 +175,6 @@
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/regBtn"
-        android:layout_width="107dp"
-        android:layout_height="34dp"
-        android:layout_marginTop="148dp"
-        android:layout_marginEnd="152dp"
-        android:background="@drawable/btn_bg"
-        android:text="Register"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_btn" />
-
+    <include layout="@layout/loading_overlay"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,20 +6,38 @@
     app:startDestination="@id/noteFragment">
     <fragment
         android:id="@+id/noteFragment"
-        android:name="com.example.notid.NoteFragment"
+        android:name="com.example.notid.fragment.NoteFragment"
         android:label="fragment_note"
         tools:layout="@layout/fragment_note" >
         <action
             android:id="@+id/action_noteFragment_to_historyFragment"
             app:destination="@id/historyFragment" />
+        <action
+            android:id="@+id/action_noteFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
     </fragment>
     <fragment
         android:id="@+id/historyFragment"
-        android:name="com.example.notid.HistoryFragment"
+        android:name="com.example.notid.fragment.HistoryFragment"
         android:label="fragment_history"
         tools:layout="@layout/fragment_history" >
         <action
             android:id="@+id/action_historyFragment_to_noteFragment"
+            app:destination="@id/noteFragment" />
+        <action
+            android:id="@+id/action_historyFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.notid.fragment.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_historyFragment"
+            app:destination="@id/historyFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_noteFragment"
             app:destination="@id/noteFragment" />
     </fragment>
 </navigation>
